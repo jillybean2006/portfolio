@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, midnightblue 0%, black 60%);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 4.5rem 0 3rem;
+  border-bottom: 2px solid plum;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: 3rem;
+}
+
+.intro {
+  max-width: 760px;
+  line-height: 1.8;
+  color: gainsboro;
+  font-size: 1.05rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-label {
+  color: plum;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-text {
+  color: gainsboro;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.projects-section,
+.skills-section,
+.contact-section {
+  padding: 4rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(221, 160, 221, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-top h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.project-date {
+  margin: 0;
+  color: plum;
+  font-weight: bold;
+}
+
+.project-description {
+  line-height: 1.7;
+  color: gainsboro;
+  margin-top: 1rem;
+}
+
+.tech {
+  color: lavender;
+  margin-top: 1rem;
+}
+
+.features h4 {
+  color: plum;
+  margin-bottom: 0.75rem;
+}
+
+.features ul {
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.primary {
+  background: plum;
+  color: black;
+}
+
+.secondary {
+  border: 2px solid plum;
+  color: plum;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.skill-card,
+.contact-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(221, 160, 221, 0.4);
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.skill-card h3 {
+  margin-top: 0;
+  color: plum;
+}
+
+.contact-card p {
+  line-height: 1.8;
+  color: gainsboro;
+}
+
+.contact-card a {
+  color: plum;
+}
+
+@media (max-width: 850px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+}
